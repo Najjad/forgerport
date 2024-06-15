@@ -5,48 +5,63 @@ import { ContractType, type Experience } from '../types';
 export const items: Array<Experience> = [
 	{
 		slug: 'open-sourcer',
-		company: 'Self-employed',
-		description: 'Creating awesome tools for developers.',
+		company: 'WebForger Studio',
+		description: 'dedicated awesomesauce',
 		contract: ContractType.SelfEmployed,
 		type: 'Software Development',
 		location: 'Home',
 		period: { from: new Date() },
 		skills: getSkills('ts', 'js'),
-		name: 'Open Source Developer',
+		name: 'Najjad',
 		color: 'red',
 		links: [],
 		logo: Assets.Unknown,
-		shortDescription: 'Creating awesome tools for developers.'
+		shortDescription: 'Leads the team with innovative ideas.'
 	},
 	{
 		slug: 'software-freelance',
-		company: 'Self-employed',
+		company: 'WebForger Studio',
 		description: 'Creating awesome applications for customers.',
 		contract: ContractType.Freelance,
 		type: 'Software Development',
 		location: 'Home',
 		period: { from: new Date() },
 		skills: getSkills('svelte', 'ts', 'sass', 'css', 'html', 'js'),
-		name: 'Freelancer',
+		name: 'Bogdan',
 		color: 'blue',
 		links: [],
 		logo: Assets.Unknown,
-		shortDescription: 'Creating awesome applications for customers.'
+		shortDescription: 'Focuses on front-end development.'
 	},
 	{
 		slug: 'software-freelance-junior',
-		company: 'Self-employed',
+		company: 'WebForger Studio',
 		description: 'Creating awesome applications for customers.',
 		contract: ContractType.Freelance,
 		type: 'Software Development',
 		location: 'Home',
 		period: { from: new Date(2022, 0, 1), to: new Date() },
 		skills: getSkills('css', 'html', 'js'),
-		name: 'Junior Freelancer',
+		name: 'Jacobo',
 		color: 'green',
 		links: [],
 		logo: Assets.Unknown,
-		shortDescription: 'Creating awesome applications for customers.'
+		shortDescription: 'Assists in developing and maintaining websites.'
+	},
+	{
+		slug: 'finance-business',
+		company: 'WebForger Studio',
+		description: 'Oversees financial operations and business strategies.',
+		contract: ContractType.Freelance,
+		type: 'Finance and Business',
+		location: 'Home',
+		period: { from: new Date() },
+		skills: getSkills('finance', 'management', 'strategy'),
+		name: 'Hussein',
+		color: 'yellow',
+		links: [],
+		logo: Assets.Unknown,
+		shortDescription: 'Manages finance and business operations for the company.'
 	}
 ];
 
