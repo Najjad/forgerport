@@ -71,7 +71,12 @@ const Assets = {
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
 	Postcss: a('postcss.svg'),
-	Najjad: a('najjad.png')
+	Finance: a('money.png'),
+	Wordpress: a('wordpress.png'),
+	Najjad: a('najjad.png'),
+	//Bogdan: a('.png'),
+	Jacobo: a('jacobo.png'),
+	//Hussein: a('.png'),
 };
 
 export default Assets;

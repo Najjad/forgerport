@@ -44,6 +44,34 @@ export const items: Array<Project> = [
 				src: 'https://images.unsplash.com/photo-1585079542156-2755d9c8a094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
 			}
 		]
+	},
+	{
+	  slug: 'DemoProject',
+	  color: '#00bfff',
+	  description: 'A demo project for showcasing purposes.',
+	  shortDescription: 'A demo project for showcasing purposes.',
+	  links: [{ to: 'https://github.com/webforgerstudio/', label: 'GitHub' }],
+	  logo: Assets.JavaScript,
+	  name: 'DemoProject',
+	  period: {
+		from: new Date('2023-01-01')
+	  },
+	  skills: getSkills('js', 'html', 'css'),
+	  type: 'Website Template',
+	  screenshots: [
+		{
+		  label: 'Home Page',
+		  src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2Vic2l0ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
+		},
+		{
+		  label: 'About Page',
+		  src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d2Vic2l0ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
+		},
+		{
+		  label: 'Contact Page',
+		  src: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHdlYnNpdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'
+		}
+	  ]
 	}
 ];
 
