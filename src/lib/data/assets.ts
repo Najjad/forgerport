@@ -72,11 +72,13 @@ const Assets = {
 	Ruvy: a('ruvy.svg'),
 	Postcss: a('postcss.svg'),
 	Finance: a('money.png'),
+	Management: a('management.png'),
 	Wordpress: a('wordpress.png'),
 	Najjad: a('najjad.png'),
 	Bogdan: a('bogdan.png'),
 	Jacobo: a('jacobo.png'),
 	//Hussein: a('.png'),
+	Sharetap: a('sharetap.png')
 };
 
 export default Assets;

@@ -90,7 +90,7 @@ export const items = [
 		slug: 'management',
 		color: 'red',
 		description: 'Effective project management is key to our success. We use proven management techniques to keep our projects on track, ensuring timely delivery and client satisfaction.',
-		logo: Assets.Unknown,
+		logo: Assets.Management,
 		name: 'Management',
 		category: 'management'
 	}),

@@ -7,17 +7,18 @@ export const items: Array<Project> = [
 		slug: 'ShareTap',
 		color: '#ff3e00',
 		description:
-			'An unorganized company',
+			'ShareTap is a company dedicated to creating NFC business cards. WebForgers created their demo website',
 		shortDescription:
-			'An unorganized company',
-		links: [{ to: 'https://github.com/webforgerstudio/sharetap', label: 'GitHub' }],
-		logo: Assets.Svelte,
+			'Demo website for a networking company',
+		links: [{ to: 'https://github.com/webforgerstudio/sharetap', label: 'GitHub' }, { to: 'http://meeteo.ddns.net:57000/', label: 'Demo Website' }],
+		logo: Assets.Sharetap,
 		name: 'ShareTap',
 		period: {
-			from: new Date()
+			from: new Date('2023-04-10'),
+			to: new Date('2023-04-20')
 		},
-		skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
-		type: 'Website Template',
+		skills: getSkills('wordpress', 'html', 'css', 'js'),
+		type: 'Demo Website',
 		screenshots: [
 			{
 				label: 'screen 1',
@@ -46,15 +47,15 @@ export const items: Array<Project> = [
 		]
 	},
 	{
-	  slug: 'DemoProject',
+	  slug: 'demo-project',
 	  color: '#00bfff',
 	  description: 'A demo project for showcasing purposes.',
-	  shortDescription: 'A demo project for showcasing purposes.',
+	  shortDescription: "When you order a website, it'll be listed here!",
 	  links: [{ to: 'https://github.com/webforgerstudio/', label: 'GitHub' }],
 	  logo: Assets.JavaScript,
-	  name: 'DemoProject',
+	  name: 'Your Project Here!',
 	  period: {
-		from: new Date('2023-01-01')
+		from: new Date()
 	  },
 	  skills: getSkills('js', 'html', 'css'),
 	  type: 'Website Template',

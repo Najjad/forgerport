@@ -48,12 +48,6 @@
 			class="row h-full justify-center items-stretch m-l-auto md:m-l-0 w-auto md:w-150px gap-1 text-1.15em"
 		>
 			<div class="row hidden md:flex">
-				<a
-					href={`${base}/search`}
-					class="text-inherit col-center self-stretch px-2 hover:bg-[color:var(--main-hover)]"
-				>
-					<UIcon icon="i-carbon-search" />
-				</a>
 				<button
 					class="bg-transparent text-1em border-none cursor-pointer hover:bg-[color:var(--main-hover)] text-[var(--secondary-text)] px-2"
 					on:click={() => toggleTheme()}
@@ -90,14 +84,6 @@
 			{/each}
 		</div>
 		<div class="col gap-2 m-t-7">
-			<a
-				href={`${base}/search`}
-				class="text-inherit decoration-none px-6 py-3 gap-2 row hover:bg-[color:var(--main-hover)]"
-				on:click={() => toggleExpanded(false)}
-			>
-				<UIcon icon="i-carbon-search" />
-				<span>Search</span>
-			</a>
 			<button
 				class="bg-transparent text-1em border-none cursor-pointer px-6 py-3 gap-2 row hover:bg-[color:var(--main-hover)] text-[var(--secondary-text)] px-2"
 				on:click={() => toggleTheme()}
