@@ -19,6 +19,7 @@ const categories = [
 	defineSkillCategory({ name: 'Design', slug: 'design' }),
 	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' }),
 	defineSkillCategory({ name: 'Finance', slug: 'finance' }),
+	defineSkillCategory({ name: 'Content Management System', slug: 'cms' }),
 	defineSkillCategory({ name: 'Management', slug: 'management' })
 ] as const;
 
@@ -40,8 +41,7 @@ export const items = [
 	defineSkill({
 		slug: 'js',
 		color: 'yellow',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		description: 'At WebForger Studio, we excel in using JavaScript to bring dynamic and interactive features to our websites. JavaScript allows us to create engaging user experiences and ensure that our clients\' websites are both functional and appealing.',
 		logo: Assets.JavaScript,
 		name: 'Javascript',
 		category: 'pro-lang'
@@ -49,8 +49,7 @@ export const items = [
 	defineSkill({
 		slug: 'ts',
 		color: 'blue',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		description: 'We use TypeScript to enhance our JavaScript code with type safety and better tooling. This helps us catch errors early and build more robust and maintainable web applications for our clients.',
 		logo: Assets.TypeScript,
 		name: 'Typescript',
 		category: 'pro-lang'
@@ -58,8 +57,7 @@ export const items = [
 	defineSkill({
 		slug: 'css',
 		color: 'blue',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		description: 'Our team is proficient in CSS, which we use to style and layout web pages. With CSS, we ensure that our websites look great on all devices and provide a seamless user experience.',
 		logo: Assets.CSS,
 		name: 'CSS',
 		category: 'markup-style'
@@ -67,34 +65,15 @@ export const items = [
 	defineSkill({
 		slug: 'html',
 		color: 'orange',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		description: 'HTML is the backbone of our web development projects. We use HTML to structure web content, ensuring that it is accessible and well-organized for both users and search engines.',
 		logo: Assets.HTML,
 		name: 'HTML',
 		category: 'markup-style'
 	}),
 	defineSkill({
-		slug: 'sass',
-		color: 'pink',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.Sass,
-		name: 'Sass',
-		category: 'markup-style'
-	}),
-	defineSkill({
-		slug: 'reactjs',
-		color: 'cyan',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
-		logo: Assets.ReactJs,
-		name: 'React Js',
-		category: 'library'
-	}),
-	defineSkill({
 		slug: 'svelte',
 		color: 'orange',
-		description: svelte,
+		description: 'Svelte is one of our favorite frameworks for building fast and efficient web applications. Its simplicity and performance benefits allow us to deliver top-notch user experiences.',
 		logo: Assets.Svelte,
 		name: 'Svelte',
 		category: 'library'
@@ -102,8 +81,7 @@ export const items = [
 	defineSkill({
 		slug: 'finance',
 		color: 'green',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		description: 'In addition to our technical expertise, we also have a strong grasp of finance. This allows us to manage project budgets effectively and ensure that our business operations run smoothly.',
 		logo: Assets.Finance,
 		name: 'Finance',
 		category: 'finance'
@@ -111,8 +89,7 @@ export const items = [
 	defineSkill({
 		slug: 'management',
 		color: 'red',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		description: 'Effective project management is key to our success. We use proven management techniques to keep our projects on track, ensuring timely delivery and client satisfaction.',
 		logo: Assets.Unknown,
 		name: 'Management',
 		category: 'management'
@@ -120,13 +97,13 @@ export const items = [
 	defineSkill({
 		slug: 'wordpress',
 		color: 'pink',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		description: 'We have extensive experience with WordPress, a popular content management system. Whether it\'s creating custom themes or managing plugins, we can handle all aspects of WordPress development to meet our clients\' needs.',
 		logo: Assets.Wordpress,
 		name: 'Wordpress',
-		category: 'wordpress'
+		category: 'cms'
 	})
 ] as const;
+
 
 export const title = 'Skills';
 

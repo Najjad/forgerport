@@ -1,11 +1,27 @@
-<script>
+<script lang="ts">
     import CommonPage from '$lib/components/CommonPage.svelte';
+    import { theme } from '$lib/stores/theme'; // Import the theme store
+    import { onMount } from 'svelte';
+
     const email = "webforgerstudio@gmail.com"; 
     const title = "Contact"; 
+
+    let currentTheme: any;
+
+    // Subscribe to the theme store
+    onMount(() => {
+        const unsubscribe = theme.subscribe(value => {
+            currentTheme = value;
+        });
+
+        return () => {
+            unsubscribe();
+        };
+    });
 </script>
 
 <CommonPage {title}>
-    <div class="contact-container">
+    <div class={`contact-container ${currentTheme ? 'dark' : 'light'}`}>
         <h1 class="contact-title">Would you like to get in touch?</h1>
         <a href={`mailto:${email}`} class="contact-button">Contact Us</a>
     </div>
@@ -24,8 +40,6 @@
         justify-content: flex-start; 
         padding-top: 50px; 
         width: 100%;
-        background-color: #000; 
-        color: #fff;
         font-family: Arial, sans-serif;
         text-align: center;
         height: auto; /* Changed from calc(100vh - 100px) to auto */
@@ -59,14 +73,22 @@
         align-items: center;
         justify-content: center;
         padding-top: 20px; /* Add padding if needed */
-        color: #fff;
         font-family: Arial, sans-serif;
         text-align: center;
-        background-color: #000;
     }
 
     .contact-text {
         font-size: 1.5em; /* Adjust the size as needed */
         margin: 5px 0; /* Add some margin for spacing */
+    }
+
+    .dark {
+        background-color: #000; 
+        color: #fff;
+    }
+
+    .light {
+        background-color: #fff; 
+        color: #000;
     }
 </style>

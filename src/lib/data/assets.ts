@@ -74,7 +74,7 @@ const Assets = {
 	Finance: a('money.png'),
 	Wordpress: a('wordpress.png'),
 	Najjad: a('najjad.png'),
-	//Bogdan: a('.png'),
+	Bogdan: a('bogdan.png'),
 	Jacobo: a('jacobo.png'),
 	//Hussein: a('.png'),
 };
