@@ -62,6 +62,8 @@
         <p class="tos-writing">WebForger Studio reserves the right to amend these Terms at any time. Clients will be notified of any changes, and continued use of our Services constitutes acceptance of the new terms.</p>
         
         <p class="tos-writing">By using our Services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.</p>
+
+        <p class="tos-footer">All rights reserved © 2024 WebForger LLC.</p>
     </div>
     
 </CommonPage>
@@ -105,6 +107,11 @@
     .tos-text ul {
         list-style-type: disc;
         padding-left: 20px;
+    }
+
+    .tos-footer {
+        font-size: 1em;
+        text-align: center;
     }
 
     .dark {
