@@ -79,6 +79,14 @@ export const items = [
 		category: 'library'
 	}),
 	defineSkill({
+		slug: 'wordpress',
+		color: 'pink',
+		description: 'We have extensive experience with WordPress, a popular content management system. Whether it\'s creating custom themes or managing plugins, we can handle all aspects of WordPress development to meet our clients\' needs.',
+		logo: Assets.Wordpress,
+		name: 'Wordpress',
+		category: 'cms'
+	}),
+	defineSkill({
 		slug: 'finance',
 		color: 'green',
 		description: 'In addition to our technical expertise, we also have a strong grasp of finance. This allows us to manage project budgets effectively and ensure that our business operations run smoothly.',
@@ -93,14 +101,6 @@ export const items = [
 		logo: Assets.Management,
 		name: 'Management',
 		category: 'management'
-	}),
-	defineSkill({
-		slug: 'wordpress',
-		color: 'pink',
-		description: 'We have extensive experience with WordPress, a popular content management system. Whether it\'s creating custom themes or managing plugins, we can handle all aspects of WordPress development to meet our clients\' needs.',
-		logo: Assets.Wordpress,
-		name: 'Wordpress',
-		category: 'cms'
 	})
 ] as const;
 
