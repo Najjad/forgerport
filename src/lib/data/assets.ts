@@ -75,10 +75,10 @@ const Assets = {
 	Management: a('management.png'),
 	Wordpress: a('wordpress.png'),
 	Najjad: a('najjad.png'),
-	Bogdan: a('bogdan.png'),
+	Bogdan: a('bogdan.jpg'),
 	Jacobo: a('jacobo.png'),
 	//Hussein: a('.png'),
-	Sharetap: a('sharetap.png')
+	//Sharetap: a('sharetap.png')
 };
 
 export default Assets;
