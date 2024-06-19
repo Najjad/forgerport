@@ -77,7 +77,7 @@ const Assets = {
 	Najjad: a('najjad.png'),
 	Bogdan: a('bogdan.jpg'),
 	Jacobo: a('jacobo.png'),
-	//Hussein: a('.png'),
+	Hussein: a('hussein.png'),
 	//Sharetap: a('sharetap.png')
 };
 

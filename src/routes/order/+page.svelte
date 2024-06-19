@@ -4,9 +4,15 @@
     import { onMount } from 'svelte';
 
     const email = "webforgerstudio@gmail.com"; 
-    const title = "Contact"; 
+    const title = "Order"; 
 
+    let userEmail = "";
+    let orderInfo = "";
     let currentTheme: any;
+
+    function sendOrder() {
+        window.location.href = `mailto:${email}?subject=New Order&body=Email: ${userEmail}%0D%0AOrder Info: ${orderInfo}`;
+    }
 
     // Subscribe to the theme store
     onMount(() => {
@@ -21,19 +27,22 @@
 </script>
 
 <CommonPage {title}>
-    <div class={`contact-container ${currentTheme ? 'dark' : 'light'}`}>
-        <h1 class="contact-title">Would you like to get in touch?</h1>
-        <a href={`mailto:${email}`} class="contact-button">Contact Us</a>
-    </div>
-
-    <div class="contact-please"> 
-        <p class="contact-text">Contact us for any inquiries, </p>
-        <p class="contact-text">we can discuss your vision, pricing, and much more!</p>
+    <div class={`order-container ${currentTheme ? 'dark' : 'light'}`}>
+        <h1 class="order-title">Place Your Order</h1>
+        <div class="order-form">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" bind:value={userEmail} required>
+            
+            <label for="order">Order Information:</label>
+            <textarea id="order" bind:value={orderInfo} required></textarea>
+            
+            <button class="send-button" on:click={sendOrder}>Send Order</button>
+        </div>
     </div>
 </CommonPage>
 
 <style lang="scss">
-    .contact-container {
+    .order-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -45,11 +54,34 @@
         height: auto; /* Changed from calc(100vh - 100px) to auto */
     }
 
-    .contact-title {
+    .order-title {
         font-size: 2em; /* Adjust the size as needed */
     }
 
-    .contact-button {
+    .order-form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        max-width: 600px;
+    }
+
+    .order-form label {
+        margin-top: 10px;
+        font-size: 1.2em;
+    }
+
+    .order-form input,
+    .order-form textarea {
+        margin-top: 5px;
+        padding: 10px;
+        font-size: 1em;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 8px; /* Added to round the corners */
+        border: 1px solid #ccc;
+    }
+
+    .send-button {
         background-color: #ff3e00; 
         border: none;
         color: white;
@@ -63,23 +95,8 @@
         border-radius: 4px;
     }
 
-    .contact-button:hover {
+    .send-button:hover {
         background-color: #e33b00; 
-    }
-
-    .contact-please {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 20px; /* Add padding if needed */
-        font-family: Arial, sans-serif;
-        text-align: center;
-    }
-
-    .contact-text {
-        font-size: 1.5em; /* Adjust the size as needed */
-        margin: 5px 0; /* Add some margin for spacing */
     }
 
     .dark {

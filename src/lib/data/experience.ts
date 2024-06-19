@@ -60,7 +60,7 @@ export const items: Array<Experience> = [
 		name: 'Hussein',
 		color: 'yellow',
 		links: [],
-		logo: Assets.Unknown,
+		logo: Assets.Hussein,
 		shortDescription: 'Manages finance and business operations for the company.'
 	}
 ];

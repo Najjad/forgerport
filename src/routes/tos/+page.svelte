@@ -31,7 +31,8 @@
         </ul>
         
         <h2 class="tos-header">3. Payment Terms</h2>
-        <p class="tos-writing"><strong>Initial Payment:</strong> An initial deposit is required before the commencement of any project.</p>
+        <p class="tos-writing"><strong>Initial Payment:</strong> An initial deposit of half the requested amount is required before the commencement of any project.</p>
+        <p class="tos-writing"><strong>Secondary Payment:</strong> The second half of the initial deposit is provided upon completition of the project</p>
         <p class="tos-writing"><strong>Monthly Payments:</strong> For ongoing services such as hosting, clients are required to make monthly payments by the specified due date.</p>
         <p class="tos-writing"><strong>Late Payments:</strong> If payments are not received within a reasonable period after the due date, we reserve the right to suspend services, including disabling access to your website until payment is made.</p>
         
@@ -63,7 +64,7 @@
         
         <p class="tos-writing">By using our Services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.</p>
 
-        <p class="tos-footer">All rights reserved © 2024 WebForger LLC.</p>
+        <p class="tos-footer">All rights reserved © 2024 WebForger.</p>
     </div>
     
 </CommonPage>
